@@ -17,7 +17,7 @@ module.exports = {
   features: {
     storyStoreV7: true,
   },
-  async viteFinal(config, { configType }) {
+  async viteFinal(config) {
     return {
       ...config,
       plugins: [...config.plugins, svgLoader()],
