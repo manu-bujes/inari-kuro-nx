@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import 'colors.scss';
+
+html,
+body {
+  height: 100%;
+  font-family: Open Sans, sans-serif !important;
+}
+
+.sbdocs .sbdocs-content {
+  color: var(--grey-600);
+}

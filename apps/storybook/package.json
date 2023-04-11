@@ -1,0 +1,25 @@
+{
+  "name": "storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-vite": "^0.4.2",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/vue3": "^6.5.16",
+    "babel-loader": "^8.3.0",
+    "storybook-addon-designs": "^6.3.1",
+    "storybook-addon-pseudo-states": "^1.15.5",
+    "vue-loader": "^16.8.3"
+  }
+}

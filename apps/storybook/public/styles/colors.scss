@@ -1,0 +1,120 @@
+$colors: (
+  primary: (
+    default: #1D3056,
+    600: #001643,
+    500: #1D3056,
+    400: #566480,
+    300: #A5ACBB,
+    200: #C6CBD4
+  ),
+  secondary: (
+    default: #6D7E91,
+    600: #526070,
+    500: #6D7E91,
+    400: #929EAD,
+    300: #C5CBD3,
+    200: #DADEE3,
+  ),
+  grey: (
+    default: #666666,
+    600: #555454,
+    500: #666666,
+    400: #999999,
+    300: #CCCCCC,
+    200: #E5E5E5,
+    100: #F2F2F2
+  ),
+  info: (
+    default: #49A3DF,
+    600: #178EDD,
+    500: #49A3DF,
+    400: #71B7E6,
+    300: #AED6F1,
+    200: #D6EAF8,
+    100: #EBF5FC
+  ),
+  success: (
+    default: #00944A,
+    700: #004D26,
+    600: #028041,
+    500: #00944A,
+    400: #4EB782,
+    300: #80CBA6,
+    200: #B3DFC9,
+    100: #DFF1E8,
+  ),
+  warning: (
+    default: #FF9500,
+    700: #E58600,
+    600: #F08C00,
+    500: #FF9500,
+    400: #FFB54D,
+    300: #FFCA80,
+    200: #FFDFB3,
+    100: #FFF0DA,
+  ),
+  error: (
+    default: #F44B4B,
+    600: #FB1E1E,
+    500: #F44B4B,
+    400: #F56666,
+    300: #FA8989,
+    200: #FFCCD5,
+    100: #FFEBEE
+  ),
+  clear: (
+    default: #F7F7F7,
+    700: #F2F2F2,
+    600: #F7F7F7,
+    500: #FFFFFF,
+    400: rgba(255, 255, 255, .3),
+    300: rgba(255, 255, 255, .16),
+    200: rgba(255, 255, 255, .08),
+  ),
+  white: #FFFFFF
+);
+
+@function get-color($color, $gradient: null) {
+  $colorMap: map-get($colors, $color);
+
+  @if not (type-of($colorMap) == 'map') {
+    @return $colorMap;
+  }
+
+  $key: default!default;
+
+  @if ($gradient) {
+    $key: $gradient;
+  }
+
+  @return map-get($colorMap, $key);
+}
+
+@mixin css-var($map, $prefix: "") {
+  @each $name, $value in $map {
+    @if (type-of($value) == 'map') {
+      @include css-var($value, $name);
+    } @else {
+      @if not ($prefix == "") and ($name == default) {
+        $name: $prefix;
+      } @else {
+        $color-prefix: $prefix;
+        @if not ($prefix == "") {
+          $color-prefix: $color-prefix + "-";
+        }
+        $name: $color-prefix + $name;
+      }
+
+      $color-name: "--" + #{$name};
+      $rgb-name: "--" + #{$name} + "-rgb";
+
+      $col: #e1d7d2;
+      #{$color-name}: #{$value};
+      #{$rgb-name}: #{red($value), green($value), blue($value)};
+    }
+  }
+}
+
+:root {
+  @include css-var($colors);
+}

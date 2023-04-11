@@ -1,0 +1,40 @@
+{
+  "name": "icl-progress-bar",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/icl-progress-bar/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/icl-progress-bar",
+        "configFile": "tools/config/vite.config.base.js"
+      }
+    },
+    "publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node tools/scripts/publish.mjs is-even {args.ver} {args.tag}"
+      },
+      "dependsOn": ["build"]
+    },
+    "test": {
+      "executor": "@nrwl/vite:test",
+      "outputs": ["coverage/packages/icl-progress-bar"],
+      "options": {
+        "passWithNoTests": true,
+        "config": "../../tools/config/vite.config.base.js",
+        "reportsDirectory": "../../coverage/packages/icl-progress-bar"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/icl-progress-bar/**/*.vue"]
+      }
+    }
+  },
+  "tags": []
+}

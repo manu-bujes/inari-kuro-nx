@@ -1,0 +1,14 @@
+{
+  "name": "icl-progress-bar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus.tech.inari.io/repository/npm-private/"
+  }
+}
