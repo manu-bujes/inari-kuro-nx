@@ -3,10 +3,10 @@
   "version": "0.0.2",
   "description": "",
   "type": "module",
-  "module": "./dist/index.js",
+  "module": "./index.js",
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "import": "./index.js"
     }
   },
   "author": "",
