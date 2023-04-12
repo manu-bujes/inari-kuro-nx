@@ -1,6 +1,6 @@
 {
-  "name": "icl-progress-bar",
-  "version": "1.0.0",
+  "name": "@inari/icl-progress-bar",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {

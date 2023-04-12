@@ -1,6 +1,6 @@
 {
-  "name": "icl-loader",
-  "version": "1.0.0",
+  "name": "@inari/icl-loader",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
