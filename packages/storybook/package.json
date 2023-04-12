@@ -3,12 +3,11 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "dev": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@inari/icl-loader": "^0.0.1"
+  },
   "devDependencies": {
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",

@@ -1,4 +1,4 @@
-import { IclLoader } from '@/packages/icl-loader/src';
+import { IclLoader } from '@inari/icl-loader';
 
 export default {
   title: 'components/icl-loader',

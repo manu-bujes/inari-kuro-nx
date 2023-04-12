@@ -40,6 +40,14 @@
       "options": {
         "preset": "conventional"
       }
+    },
+    "deploy": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "restricted",
+        "registry": "https://nexus.tech.inari.io/repository/npm-private/"
+      },
+      "dependsOn": ["build"]
     }
   },
   "tags": []

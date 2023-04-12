@@ -10755,6 +10755,11 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.1.tgz#26c8a3cee6cc05fbcf1e333cd2fc3e003326c0b5"
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
 
+ngx-deploy-npm@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/ngx-deploy-npm/-/ngx-deploy-npm-5.2.0.tgz#723500ab44fa9e804c681fc51752a2bc1dac481e"
+  integrity sha512-+lsBNlDQ6Lr0fBN2eV+kbiExnPJwmuTK0cz1HBzvi+13DWu/AgAwy5o7bA+IkZL5pS6f4alJpjqY+TDMfGpubw==
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
@@ -14816,6 +14821,11 @@ vfile@^4.0.0:
     is-buffer "^2.0.0"
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
+
+vite-plugin-css-injected-by-js@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-css-injected-by-js/-/vite-plugin-css-injected-by-js-3.1.0.tgz#d1160c975d40f256692e2465832e6ff18c22b3a3"
+  integrity sha512-qogCmpocZfcbSAYZQjS88ieIY0PzLUm7RkLFWFgAxkXdz3N6roZbSTNTxeIOj5IxFbZWACUPuVBBoo6qCuXDcw==
 
 vite-plugin-eslint@^1.8.1:
   version "1.8.1"
