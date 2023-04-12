@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+### [0.0.4](https://github.com/manu-bujes/inari-kuro-nx/compare/icl-loader-0.0.3...icl-loader-0.0.4) (2023-04-12)
+
+
+### Bug Fixes
+
+* **icl-loader:** fix dist folder ([5912831](https://github.com/manu-bujes/inari-kuro-nx/commit/591283125164ffe69e4c3ddd53b182c81b99c42d))
+
 ## [0.0.3](https://github.com/manu-bujes/inari-kuro-nx/compare/icl-loader-0.0.2...icl-loader-0.0.3) (2023-04-12)
 
 
