@@ -6,6 +6,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@inari/icl-loader": "0.0.3"
+    "@inari/icl-loader": "0.0.4"
   }
 }

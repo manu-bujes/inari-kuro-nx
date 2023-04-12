@@ -145,7 +145,7 @@ importers:
   packages/storybook:
     dependencies:
       '@inari/icl-loader':
-        specifier: 0.0.3
+        specifier: 0.0.4
         version: link:../icl-loader
 
 packages:
